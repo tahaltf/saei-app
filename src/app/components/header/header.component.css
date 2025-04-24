@@ -1,0 +1,9 @@
+.count-container {
+  position: relative;
+}
+
+.count-num {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}

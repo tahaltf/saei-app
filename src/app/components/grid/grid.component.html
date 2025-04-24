@@ -1,0 +1,31 @@
+<div class="card">
+  <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }" id="table">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>ردیف</th>
+        <th>عنوان</th>
+        <th>قیمت</th>
+        <th>عملیات</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.title }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <div>
+
+          </div>
+          <button class="btn btn-danger m-1">
+            <i class="fa fa-trash" (click)="removeItem($event , product.id)"></i>
+          </button>
+          <p-confirmPopup />
+          <button class="btn btn-warning m-1">
+            <i class="fa fa-edit" (click)="editItem(product)"></i>
+          </button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

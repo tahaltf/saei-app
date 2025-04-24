@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@font-face {
+  font-family: "yekan";
+  src: url("assets/fonts/BYekan.woff2") format("woff2"),
+    url("assets/fonts/BYekan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+th,
+td,
+h1,
+h2,
+h3,
+span {
+  font-family: "yekan" !important;
+}
+/* not use star becouse has effect on icon */
+
+body {
+  /* direction: rtl; */
+  background-color: #fafafa;
+  font-family: "yekan" !important;
+}
+td,
+th {
+  text-align: center !important;
+}
+
+.text-dark {
+  color: rgb(33, 33, 33);
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 14px;
+}
+.bold {
+  font-weight: bold;
+}
